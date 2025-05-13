@@ -127,6 +127,7 @@ nav ul li a:hover::after{
     border-radius: 50%;
     margin: 20px 10px;
     background: transparent;
+    color:#ae00de;
     border: 2px solid #24082c;
 }
 .btn-link{
@@ -134,9 +135,9 @@ nav ul li a:hover::after{
     font-size: 1.8rem;
     margin: 20px 70px;
     background-color: #ae00de;
-    box-shadow: 0 0 25px #ae00de;
+    box-shadow: 0 0 20px #ae00de71;
     border: 2px solid transparent;
-    color:black;
+    color:#24082c;
     font-weight: 600;
 
 }
