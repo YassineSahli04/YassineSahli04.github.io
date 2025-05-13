@@ -199,3 +199,131 @@ nav ul li a:hover::after{
     text-align: justify;
 }
 
+
+#Projects{
+    padding: 50px 0;
+}
+
+.projects-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #ae00de);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color:#ae00de;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 18px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover image{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ae00de;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background: #ae00de;
+}
+
+
+
+.contact-column1{
+    flex-basis: 35%;
+}
+.contact-column2{
+    flex-basis: 60%;
+}
+.contact-column1 p{
+    margin-top: 30px;
+}
+.contact-column1 p i{
+    color: #ae00de;
+    margin-right: 15px;
+    font-size: 15px;
+}
+.btn.btn1{
+    display: inline-block;
+    background: #ae00de;
+}
+
+.contact-column2 form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0 ;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+form .btn1{
+    padding: 15px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
