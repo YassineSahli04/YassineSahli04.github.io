@@ -11,7 +11,20 @@
     />
     <script src="https://kit.fontawesome.com/450cb02be2.js" crossorigin="anonymous"></script>
 </head>
+
+<div id="info-card">
+    <div class="card-content">
+        <div class="card-header">
+            <h2 id="card-title"></h2>
+            <p id="card-date" class="date-range"></p>
+        </div>
+        <p id="card-company" class="company-name"></p>
+        <p id="card-description" class="description"></p>
+    </div>
+</div>
+
 <body>
+
     <nav id="navbar">
         <div class="container">
             <img src="image/uottawalogo.png" class="logo">
@@ -69,21 +82,27 @@
         <div class="container">
             <h1>Experiences</h1>
             <div class="experiences-list">
-                <div>
+                <div class="experience-card" data-id="exp1">
                     <i class="fa-solid fa-code fa-beat-fade" style="color: #ffffff;"></i>
                     <h2>Software Devoloper - CO-OP</h2>
                     <p>Full-stack software development internship focused on database systems,
                         performance optimization, and user-centric features in a professional
                         industrial environment.</p>
-                    <a href="#"></a>
                 </div>
-                <div>
+                <div class="experience-card" data-id="exp2">
+                    <i class="fa-solid fa-code fa-beat-fade" style="color: #ffffff;"></i>
+                    <h2>Software Devoloper - Intern</h2>
+                    <p>Full-stack software development internship focused on API integration,
+                        responsive web design, and real-time data processing in a collaborative
+                        startup environment.</p>
+
+                </div>
+                <div class="experience-card" data-id="exp3">
                     <i class="fa-solid fa-graduation-cap fa-beat-fade"></i>
                     <h2>Tutor - Tutorat Pro</h2>
                     <p>Full-stack software development internship focused on database systems,
                         performance optimization, and user-centric features in a professional
                         industrial environment.</p>
-                    <a href="#" class="learn-more-btn"></a>
                 </div>
             </div>
         </div>
@@ -165,6 +184,35 @@
     function closemenu(){
         sideMenu.style.right = '-150px'
     }
+</script>
+
+<script>
+  fetch('data/experiences.json')
+    .then(res => res.json())
+    .then(data => {
+      document.querySelectorAll('.experience-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const id = card.dataset.id;
+            const exp = data[id];
+
+            document.getElementById("card-title").innerText = exp.title;
+            document.getElementById("card-date").innerText = exp.date;
+            document.getElementById("card-company").innerText = exp.company;
+            document.getElementById("card-description").innerHTML = exp.description.replace(/\n/g, '<br>');
+            document.getElementById("info-card").style.display = "flex";
+        });
+      });
+    });
+
+    document.getElementById('info-card').addEventListener('click', function (event) {
+        if (!event.target.closest('.card-content')) {
+            closeCard();
+        }
+    });
+
+  function closeCard() {
+    document.getElementById("info-card").style.display = "none";
+  }
 </script>
             
 
