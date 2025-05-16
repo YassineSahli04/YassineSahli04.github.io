@@ -3,7 +3,7 @@
     "title": "Software Developer - CO-OP",
     "company": "Enero Solutions",
     "date": "January 2025 – April 2025",
-    "description": "• Developed a WPF desktop application using OOP and the MVVM architecture by integrating multiple databases (SQLite, MySQL, SQL Server, InfluxDB) to enable industrial data management within the company’s core system.\n• Worked with InfluxDB in virtual environments, applying basic networking concepts to manage real-time data.\n• Improved SQL query performance by creating partitioned and indexed configurations, achieving a 20% reduction in execution time through custom benchmarking.\n• Implemented NUnit tests by deploying database environments in Docker-based virtual machines to validate database management methods."
+    "description": "• Developed a WPF desktop application using OOP and the MVVM architecture by integrating multiple databases (SQLite, MySQL, SQL Server, InfluxDB) to support data management in the company’s core software system.\n• Worked with InfluxDB in virtual environments, applying computer networking concepts to manage real-time data.\n• Improved SQL query performance by creating partitioned and indexed configurations, achieving a 20% reduction in execution time as measured through targeted benchmarking.\n• Implemented NUnit tests by deploying database environments in Docker-based virtual machines to validate database management methods."
   },
   "exp2": {
     "title": "Software Developer - Intern",
@@ -14,7 +14,7 @@
     "exp3": {
     "title": "Tutor",
     "company": "Tutorat Pro",
-    "date": "May 2023 – July 2023",
+    "date": "May 2024 – Mars 2025",
     "description": "• Provided personalized math tutoring which helped me learning various teaching methods to suit individual learning styles and needs.\n• Developed effective communication strategies and learned how to interact with children in a way that made complex math concepts understandable, using clear explanations, visual aids, and engaging methods to cater to their individual learning styles. \n• Covered various math topics including simple and more complex themes arithmetic, algebra, geometry, and calculus, ensuring thorough understanding and proficiency.\n• Assisted with homework assignments, exam preparation, and supplementary learning materials.\n• Monitored progress and adjusted teaching methods as needed to optimize learning outcomes.\n• Received positive feedback from students and their parents for improvements in grades and overall understanding of mathematical concepts."
   }
 }

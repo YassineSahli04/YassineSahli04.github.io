@@ -205,17 +205,17 @@
                     <p><i class="fa-solid fa-phone fa-beat-fade"></i>  (873) 455 7117</p>
                 </div>
                 <div class="contact-column2">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="Email" placeholder="Email" required>
-                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <form action="https://formspree.io/f/movdrlzy" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="6" placeholder="Message"></textarea>
                         <button type="submit" class="btn btn1">Submit</button>
                     </form>
+                    <div id="form-status"></div>
                 </div>
 
             </div>
         </div>
-
     </div>
         
 
@@ -333,16 +333,13 @@
 </script>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyRubsW8WZOvNi1sgEkav1xumOJA7wgoEv07qKYf24phLYsF3XaLmJUHo8TbhQIah7M/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
+  window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  };
 </script>
+
 
 
     

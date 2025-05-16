@@ -1,45 +1,45 @@
 {
   "proj1":  {
     "title": "CookBot",
-    "skills": "Python, Java, YOLOv12, TFLite, Android Studio, SQLite, Pandas, Matplotlib, Jupyter Lab",
-    "description": "• Developing a mobile app that uses a YOLOv12-based computer vision model to detect ingredients from user photos and suggest personalized recipes via a custom matching algorithm.\n• Trained and optimized the object detection model with a custom dataset achieving 70% accuracy, then converted and deployed it using TensorFlow Lite and ONNX to enable efficient, real-time mobile performance.\n• Integrated the model into the app workflow, including real-time image capture, preprocessing (resizing, normalization), prediction, and UI display, ensuring optimized runtime and high prediction accuracy.\n• Prepared and cleaned a recipe dataset (Food.com) using Python scripting with Pandas to handle missing data and normalization, and created visualizations with Matplotlib to validate data quality.\n• Exploring deployment of vision model via cloud-based endpoints (e.g., Firebase Functions or GCP AI Platform).",
+    "skills": "Python, Java, YOLOv12, Ultralitics, PyTorch, TFLite, Android Studio, SQLite, Pandas, Matplotlib, Jupyter Lab",
+    "description": "• Developing a mobile app that uses a YOLOv12-based computer vision model to detect ingredients from user photos and suggest personalized recipes via a custom matching algorithm.\n• Trained and optimized the object detection model with a custom dataset achieving 70% accuracy, then converted and deployed it using TensorFlow Lite and ONNX to enable efficient, real-time mobile performance.\n• Integrated the model into the app workflow, including real-time image capture, preprocessing (resizing, normalization), prediction, and UI display, ensuring optimized runtime and high prediction accuracy.\n• Prepared and cleaned a recipe dataset (Food.com) using Python scripting with Pandas to handle missing data and normalization, and created visualizations with Matplotlib to validate data quality.\n• Exploring deployment of vision model via cloud-based endpoints (e.g., Firebase Functions or GCP AI Platform). \n• Documented all stages of development, from data preparation to deployment, to support future collaboration.",
     "image": "image/CookBot.jpg",
-    "link": "https://github.com/YassineSahli04/CookBot"
+    "link": "https://github.com/orgs/PersonalProjects-YassineXHedi/repositories"
   },
   "proj2": {
   "title": "Image Datasets Creation Tool",
-  "skills": "Python, Selenium, Tkinter, Multi-threading",
+  "skills": "Python, Selenium, Tkinter, Multi-threading (concurent.future)",
   "description": "• Built a Python-based Tkinter app that uses Selenium scripts to automate image scraping from Google sources, allowing users to generate curated datasets through a fully automated and interactive UI.\n• Added multi-threading to accelerate scraping and used scripting logic to display, preview, and manage batch downloads, streamlining the entire data collection process.\n• Supported curated ML dataset creation by integrating batch preview and selection into the scraping workflow.",
   "image": "image/ImageDatasetTool.jpg",
-  "link": "https://github.com/YassineSahli04/ImageDatasetTool"
+  "link": "https://github.com/PersonalProjects-YassineXHedi/ImageDatasetCreation"
     },
     "proj3": {
     "title": "Food Vision",
     "skills": "Python, TensorFlow/Keras, Numpy, Pandas, Matplotlib, TensorBoard",
     "description": "• Developed convolutional neural network (CNN) models with TensorFlow and Keras, focusing on food image classification using EfficientNetV2 architecture.\n• Applied transfer learning techniques (fine-tuning and feature extraction) with callbacks (early stopping, learning rate reduction) to optimize training performance and prevent overfitting.\n• Integrated a data augmentation layer into the CNN model pipeline to enhance generalization, applying transformations such as rotation, flipping, and zoom during training.\n• Evaluated model accuracy using validation sets and confusion matrices; visualized training progress (loss and accuracy) with TensorBoard and Matplotlib to monitor performance and guide model improvements.",
     "image": "image/FoodVision.jpg",
-    "link": "https://github.com/YassineSahli04/FoodVision"
+    "link": "https://github.com/PersonalProjects-YassineXHedi/FoodVision"
     },
     "proj4": {
     "title": "Custom PC Order Service",
     "skills": "Java, Android Studio, Firebase, JUnit, Mockito",
     "description": "• Led the development of a mobile app in Android Studio (Java) for building and customizing PC configurations.\n• Integrated Firebase Database to manage real-time synchronization of user activity across distributed clients.\n• Implemented unit tests with JUnit and Mockito to validate backend logic and verify Firebase database operations.",
     "image": "image/pc_order_service.jpg",
-    "link": "https://github.com/YassineSahli04/PCOrderService"
+    "link": "https://github.com/uOttawa-2024-2025-seg2505-projet/groupe-35"
     },
     "proj5": {
     "title": "Smart Irrigation System",
     "skills": "Arduino IDE, C++, Soil Moisture Sensor",
     "description": "• Built an Arduino-based irrigation system using soil moisture sensors to automate watering based on real-time data.\n• Integrated sensor feedback with responsive automation logic to ensure accurate and timely irrigation.",
     "image": "image/smart_irrigation.jpg",
-    "link": "https://github.com/YassineSahli04/SmartIrrigation"
+    "link": "https://drive.google.com/drive/folders/1B9eMEj0YUpasy1C2F2vEWMY5pLajiKXZ"
     },
     "proj6": {
     "title": "Personal Portfolio Website",
     "skills": "HTML, CSS, JavaScript",
     "description": "• Designed and developed a personal portfolio website to showcase projects, experience, and technical skills using HTML, CSS, and JavaScript.\n• Focused on responsive design, clear structure, and fast performance; planned deployment via GitHub Pages.",
     "image": "image/portfolio.jpg",
-    "link": "https://github.com/YassineSahli04/PortfolioWebsite"
+    "link": "https://github.com/YassineSahli04/YassineSahli04.github.io"
     }
 
 
