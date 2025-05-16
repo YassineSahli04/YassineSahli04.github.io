@@ -45,7 +45,7 @@
 
     <nav id="navbar">
         <div class="container">
-            <img src="image/uottawalogo.png" class="logo">
+            <img src="image/logo.png" class="logo">
             <ul id="side-menu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -129,7 +129,7 @@
     <div id="Projects">
         <div class="container">
             <h1>Projects</h1>
-            <div class="projects-list">
+            <div class="projects-list" id="projects-list">
                 <div class="work">
                     <img src="image/CookBot.jpg">
                     <div class="layer">
@@ -161,8 +161,37 @@
                         <a href="javascript:void(0)" class="project-card" data-id="proj3"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
                     </div>
                 </div>
+
+                
+                <div class="work more-project">
+                    <img src="image/Custom PC.jpg">
+                    <div class="layer">
+                        <h3>Custom PC Order Service</h3>
+                        <p>Custom PC Order Service is a mobile application that allows users to build and customize PC configurations directly from their phone. Designed for convenience and flexibility, it ensures real-time data syncing and provides a streamlined experience for creating personalized computer setups.</p>
+                        <a href="javascript:void(0)" class="project-card" data-id="proj4"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                    </div>
+                </div>
+
+                <div class="work more-project">
+                    <img src="image/smart_irrigation.jpg">
+                    <div class="layer">
+                        <h3>Smart Irrigation System</h3>
+                        <p>Smart Irrigation System is a microcontroller-based project designed to automate plant watering using real-time soil moisture feedback. The system ensures efficient water use by triggering irrigation only when needed, making it ideal for sustainable and low-maintenance gardening.</p>
+                        <a href="javascript:void(0)" class="project-card" data-id="proj5"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                    </div>
+                </div>
+
+                <div class="work more-project">
+                    <img src="image/portfolio.jpg">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Personal Portfolio Website is a fully custom-built site created to showcase projects, technical experience, and professional background. It emphasizes clarity, responsiveness, and fast performance, providing a clean and accessible way for visitors to explore your work.</p>
+                        <a href="javascript:void(0)" class="project-card" data-id="proj6"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                    </div>
+                </div>            
+                       
             </div>
-            <a href="#" class="btn">See More</a>
+            <a href="javascript:void(0)" class="btn" id="see-more-btn">See More</a>
         </div>
     </div>
 
@@ -292,7 +321,16 @@
     document.getElementById("info-card-projects").style.display = "none";
   }
 </script>
-            
+       
+<script>
+    document.getElementById('see-more-btn').addEventListener('click', function () {
+        const list = document.getElementById('projects-list');
+        const overlay = document.getElementById('blur-overlay');
+
+        const isExpanded = list.classList.toggle('expanded');
+        this.textContent = isExpanded ? "See Less" : "See More";
+    });
+</script>
 
 
     

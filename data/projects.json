@@ -19,6 +19,27 @@
     "description": "• Developed convolutional neural network (CNN) models with TensorFlow and Keras, focusing on food image classification using EfficientNetV2 architecture.\n• Applied transfer learning techniques (fine-tuning and feature extraction) with callbacks (early stopping, learning rate reduction) to optimize training performance and prevent overfitting.\n• Integrated a data augmentation layer into the CNN model pipeline to enhance generalization, applying transformations such as rotation, flipping, and zoom during training.\n• Evaluated model accuracy using validation sets and confusion matrices; visualized training progress (loss and accuracy) with TensorBoard and Matplotlib to monitor performance and guide model improvements.",
     "image": "image/FoodVision.jpg",
     "link": "https://github.com/YassineSahli04/FoodVision"
+    },
+    "proj4": {
+    "title": "Custom PC Order Service",
+    "skills": "Java, Android Studio, Firebase, JUnit, Mockito",
+    "description": "• Led the development of a mobile app in Android Studio (Java) for building and customizing PC configurations.\n• Integrated Firebase Database to manage real-time synchronization of user activity across distributed clients.\n• Implemented unit tests with JUnit and Mockito to validate backend logic and verify Firebase database operations.",
+    "image": "image/pc_order_service.jpg",
+    "link": "https://github.com/YassineSahli04/PCOrderService"
+    },
+    "proj5": {
+    "title": "Smart Irrigation System",
+    "skills": "Arduino IDE, C++, Soil Moisture Sensor",
+    "description": "• Built an Arduino-based irrigation system using soil moisture sensors to automate watering based on real-time data.\n• Integrated sensor feedback with responsive automation logic to ensure accurate and timely irrigation.",
+    "image": "image/smart_irrigation.jpg",
+    "link": "https://github.com/YassineSahli04/SmartIrrigation"
+    },
+    "proj6": {
+    "title": "Personal Portfolio Website",
+    "skills": "HTML, CSS, JavaScript",
+    "description": "• Designed and developed a personal portfolio website to showcase projects, experience, and technical skills using HTML, CSS, and JavaScript.\n• Focused on responsive design, clear structure, and fast performance; planned deployment via GitHub Pages.",
+    "image": "image/portfolio.jpg",
+    "link": "https://github.com/YassineSahli04/PortfolioWebsite"
     }
 
 
