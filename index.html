@@ -12,14 +12,32 @@
     <script src="https://kit.fontawesome.com/450cb02be2.js" crossorigin="anonymous"></script>
 </head>
 
-<div id="info-card">
-    <div class="card-content">
+<div id="info-card-experiences">
+    <div class="card-content experience-content">
         <div class="card-header">
             <h2 id="card-title"></h2>
             <p id="card-date" class="date-range"></p>
         </div>
         <p id="card-company" class="company-name"></p>
         <p id="card-description" class="description"></p>
+    </div>
+</div>
+
+<div id="info-card-projects">
+    <div class="card-content project-content">
+        
+        <h2 id="project-title" class="project-title"></h2>
+        <img id="project-image" class="project-image" src="" alt="Project Screenshot">
+
+        <p id="project-skills" class="project-skills"></p>
+        <p id="project-description" class="description"></p>
+
+        <div class="social-icons">
+            <a id="project-link" class="icon-link" href="#" target="_blank">
+                <i class="bx bxl-github"></i>
+            </a>
+        </div>
+
     </div>
 </div>
 
@@ -120,29 +138,27 @@
                             and receive recipe suggestions based on what’s detected. The goal is to make
                             meal planning easier by identifying available ingredients and offering
                             personalized recipes.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                        <a href="javascript:void(0)" class="project-card" data-id="proj1"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/CookBot.jpg">
+                    <img src="image/web_scrapping_project.jpg">
                     <div class="layer">
-                        <h3>CookBot</h3>
-                        <p>CookBot is a mobile app that allows users to take a photo of their ingredients
-                            and receive recipe suggestions based on what’s detected. The goal is to make
-                            meal planning easier by identifying available ingredients and offering
-                            personalized recipes.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                        <h3>Image Datasets Creation Tool</h3>
+                        <p>Image Datasets Creation Tool is a desktop application that allows users to
+                            search and collect images from Google sources to build custom datasets. 
+                            Designed to simplify dataset generation, the tool provides an interactive 
+                            interface and automates the image scraping process to save time and effort.</p>
+                        <a href="javascript:void(0)" class="project-card" data-id="proj2"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/CookBot.jpg">
+                    <img src="image/food_vision.jpg">
                     <div class="layer">
-                        <h3>CookBot</h3>
-                        <p>CookBot is a mobile app that allows users to take a photo of their ingredients
-                            and receive recipe suggestions based on what’s detected. The goal is to make
-                            meal planning easier by identifying available ingredients and offering
-                            personalized recipes.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                        <h3>Food Vision</h3>
+                        <p>Food Vision is a machine learning project designed to classify food images using advanced neural network techniques. The goal is to 
+                            accurately recognize different types of food from images by optimizing its performance through smart training strategies and evaluation tools.</p>
+                        <a href="javascript:void(0)" class="project-card" data-id="proj3"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
                     </div>
                 </div>
             </div>
@@ -187,31 +203,93 @@
 </script>
 
 <script>
-  fetch('data/experiences.json')
-    .then(res => res.json())
-    .then(data => {
-      document.querySelectorAll('.experience-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const id = card.dataset.id;
-            const exp = data[id];
+    fetch('data/experiences.json')
+        .then(res => res.json())
+        .then(data => {
+        document.querySelectorAll('.experience-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const id = card.dataset.id;
+                const exp = data[id];
 
-            document.getElementById("card-title").innerText = exp.title;
-            document.getElementById("card-date").innerText = exp.date;
-            document.getElementById("card-company").innerText = exp.company;
-            document.getElementById("card-description").innerHTML = exp.description.replace(/\n/g, '<br>');
-            document.getElementById("info-card").style.display = "flex";
+                document.getElementById("card-title").innerText = exp.title;
+                document.getElementById("card-date").innerText = exp.date;
+                document.getElementById("card-company").innerText = exp.company;
+                document.getElementById("card-description").innerHTML = exp.description.replace(/\n/g, '<br>');
+                document.getElementById("info-card-experiences").style.display = "flex";
+            });
         });
-      });
-    });
+        });
 
-    document.getElementById('info-card').addEventListener('click', function (event) {
-        if (!event.target.closest('.card-content')) {
+    document.getElementById('info-card-experiences').addEventListener('click', function (event) {
+        const content = this.querySelector('.card-content');
+        if (!content.contains(event.target)) {
             closeCard();
         }
     });
 
-  function closeCard() {
-    document.getElementById("info-card").style.display = "none";
+    function closeCard() {
+        document.getElementById("info-card-experiences").style.display = "none";
+    }
+</script>
+
+<script>
+    fetch('data/experiences.json')
+        .then(res => res.json())
+        .then(data => {
+        document.querySelectorAll('.experience-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const id = card.dataset.id;
+                const exp = data[id];
+
+                document.getElementById("card-title").innerText = exp.title;
+                document.getElementById("card-date").innerText = exp.date;
+                document.getElementById("card-company").innerText = exp.company;
+                document.getElementById("card-description").innerHTML = exp.description.replace(/\n/g, '<br>');
+                document.getElementById("info-card-experiences").style.display = "flex";
+            });
+        });
+        });
+
+    document.getElementById('info-card-experiences').addEventListener('click', function (event) {
+        const content = this.querySelector('.card-content');
+        if (!content.contains(event.target)) {
+            closeCard();
+        }
+    });
+
+    function closeCard() {
+        document.getElementById("info-card-experiences").style.display = "none";
+    }
+</script>
+
+<script>
+    fetch('data/projects.json')
+    .then(res => res.json())
+    .then(data => {
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const id = card.dataset.id;
+            const proj = data[id];
+
+            document.getElementById("project-title").innerText = proj.title;
+            document.getElementById("project-skills").innerText = proj.skills;
+            document.getElementById("project-description").innerHTML = proj.description.replace(/\n/g, '<br>');
+            document.getElementById("project-image").src = proj.image;
+            document.getElementById("project-image").alt = `${proj.title} screenshot`;
+            document.getElementById("project-link").href = proj.link;
+            document.getElementById("info-card-projects").style.display = "flex";
+        });
+    });
+    });
+    document.getElementById('info-card-projects').addEventListener('click', function (event) {
+        const content = this.querySelector('.project-content');
+        if (!content.contains(event.target)) {
+            closeProjectCard();
+        }
+    });
+
+  function closeProjectCard() {
+    document.getElementById("info-card-projects").style.display = "none";
   }
 </script>
             
