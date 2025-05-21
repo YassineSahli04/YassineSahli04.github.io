@@ -6,7 +6,10 @@
 }
 body{
     background: #000000;
-    color: #fff
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -223,7 +226,7 @@ nav ul li a:hover::after{
 
 .projects-list{
     display:grid;
-    grid-template-columns:  repeat(3, 1fr);
+    grid-template-columns:  repeat(auto-fit, minmax(350px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -374,7 +377,7 @@ form .btn1{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     background: rgba(0, 0, 0, 0.08); 
     backdrop-filter: blur(10px);
@@ -486,7 +489,7 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:630px){
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -504,7 +507,7 @@ nav .fa-solid{
         top: 0;
         right: -150px;
         width: 150px;
-        height: 100vh;
+        height: 200vh;
         padding-top: 50px;
         z-index: 2;
         transition: 0.3s ease-in-out;
@@ -521,8 +524,20 @@ nav .fa-solid{
         cursor: pointer;
     }
 
+
+    .btn-link{
+        border-radius: 3rem;
+        font-size: 16px;
+        margin: 10px 20px;
+        font-weight: 400;
+
+    }
+
     .column2 h1{
         font-size: 40px;
+    }
+    .column2{
+        padding: 0;
     }
     #Experiences h1{
         font-size: 40px;
@@ -531,12 +546,11 @@ nav .fa-solid{
         font-size: 40px;
     }
     .column1, .column2{
-        flex-basis: 100%;
+        flex-basis: 950%;
     }
-    .column2{
-        margin-right: 10px;
-    }
-    .contact-column1, .contact-column2{
+
+    .contact-column1, 
+    .contact-column2{
         flex-basis: 100%;
     }
 
@@ -544,8 +558,17 @@ nav .fa-solid{
         padding: 10px 0;
     }
     .social-icons a{
-    font-size:20px;
-    padding: 5px;
-}
+        font-size:20px;
+        padding: 5px;
+    }
+
+    #Projects{
+        padding-top: 80px;
+    }
+
+    .card-content {
+        overflow-y: auto; 
+    }
+
 
 }
