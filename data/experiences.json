@@ -3,13 +3,13 @@
     "title": "Software Developer - CO-OP",
     "company": "Enero Solutions",
     "date": "January 2025 – April 2025",
-    "description": "• Developed a WPF desktop application using OOP and the MVVM architecture by integrating multiple databases (SQLite, MySQL, SQL Server, InfluxDB) to support data management in the company’s core software system.\n• Worked with InfluxDB in virtual environments, applying computer networking concepts to manage real-time data.\n• Improved SQL query performance by creating partitioned and indexed configurations, achieving a 20% reduction in execution time as measured through targeted benchmarking.\n• Implemented NUnit tests by deploying database environments in Docker-based virtual machines to validate database management methods."
+    "description": "• Enabled centralized databases management within the same UI by devoloping a WPF desktop application using OOP and the MVVM architecture to streamline multi-database interactions and enhance user workflow efficiency.\n• Implemented NUnit tests by deploying database environments in Docker-based VMs to validate added methods.\n• Improved SQL query performance by creating partitioned and indexed configurations, achieving a 20% reduction in execution time as measured through custom benchmarking tests and fully documented for future optimization."
   },
   "exp2": {
     "title": "Software Developer - Intern",
     "company": "ADDINN Group",
     "date": "May 2023 – July 2023",
-    "description": "• Built backend services with Node.js by integrating third-party APIs and querying databases to deliver real-time agricultural, weather, and soil data for data-driven farming insights. \n• Designed a responsive frontend with React, HTML, and CSS, ensuring reusability and cross-platform compatibility."
+    "description": "• Automated real-time data manipulation workflows using Node.js, node-cron, and Axios, enabling reliable collection, validation, and storage of environmental data retrieved from external APIs.\n• Designed a responsive frontend with React, HTML, and CSS, ensuring reusability and cross-platform compatibility to visualize farming data and support informed irrigation decisions."
   },
     "exp3": {
     "title": "Tutor",
