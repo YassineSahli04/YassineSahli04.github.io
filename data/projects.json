@@ -35,11 +35,11 @@
     "link": "https://drive.google.com/drive/folders/1B9eMEj0YUpasy1C2F2vEWMY5pLajiKXZ"
     },
     "proj6": {
-    "title": "Personal Portfolio Website",
-    "skills": "HTML, CSS, JavaScript",
-    "description": "• Designed and developed a personal portfolio website to showcase projects, experience, and technical skills using HTML, CSS, and JavaScript.\n• Focused on responsive design, clear structure, and fast performance; planned deployment via GitHub Pages.",
-    "image": "image/portfolio.jpg",
-    "link": "https://github.com/YassineSahli04/YassineSahli04.github.io"
+    "title": "TuniTour - Service Website",
+    "skills": "HTML, CSS, JavaScript, React, Figma",
+    "description": "• Built a responsive tour booking website using React, structuring the UI with reusable components and managing user input and state transitions via custom hooks.\n• Designed user-centric prototypes in Figma, mapping out two distinct navigation flows aligned with specific personas.\n• Ensured intuitive user experience across platforms (desktop, tablet, mobile) by applying mobile-first design principles and adaptive layouts.\n",
+    "image": "image/TuniTour_Resized_2_2304x1792.png",
+    "link": "https://github.com/YassineSahli04/TourBookingWebsite"
     }
 
 
