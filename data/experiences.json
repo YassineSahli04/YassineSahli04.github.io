@@ -1,20 +1,20 @@
 {
   "exp1": {
+    "title": "Tutor",
+    "company": "Tutorat Pro",
+    "date": "Sep. 2025 – Apr. 2026",
+    "description": "• Automated end-to-end tests for a Payroll Integration Platform, covering cloud-based microservices using SpecFlow, Selenium, and SQL in a .NET-based framework, significantly reducing manual regression effort across environments.\n• Fixed UI defects by diagnosing React/TypeScript component issues, isolating faulty logic, and validating corrected behavior through targeted Jest tests, strengthening component stability and preventing future regressions.\n• Strengthened CI/CD processes by monitoring the test suite, resolving flaky or quarantined scenarios, and validating deployments across QA environments, maintaining stable and reliable coverage with a failing rate below 5%.\n• Developing a token-reuse authentication solution that allows Selenium to bypass repeated UI logins by leveraging persisted backend session data, reducing scenario runtime and significantly improving debugging efficiency."
+  },
+  "exp2": {
     "title": "Software Developer - CO-OP",
     "company": "Enero Solutions",
     "date": "January 2025 – April 2025",
     "description": "• Enabled centralized databases management within the same UI by devoloping a WPF desktop application using OOP and the MVVM architecture to streamline multi-database interactions and enhance user workflow efficiency.\n• Implemented NUnit tests by deploying database environments in Docker-based VMs to validate added methods.\n• Improved SQL query performance by creating partitioned and indexed configurations, achieving a 20% reduction in execution time as measured through custom benchmarking tests and fully documented for future optimization."
   },
-  "exp2": {
+  "exp3": {
     "title": "Software Developer - Intern",
     "company": "ADDINN Group",
     "date": "May 2023 – July 2023",
     "description": "• Automated real-time data manipulation workflows using Node.js, node-cron, and Axios, enabling reliable collection, validation, and storage of environmental data retrieved from external APIs.\n• Designed a responsive frontend with React, HTML, and CSS, ensuring reusability and cross-platform compatibility to visualize farming data and support informed irrigation decisions."
-  },
-    "exp3": {
-    "title": "Tutor",
-    "company": "Tutorat Pro",
-    "date": "May 2024 – Mars 2025",
-    "description": "• Provided personalized math tutoring which helped me learning various teaching methods to suit individual learning styles and needs.\n• Developed effective communication strategies and learned how to interact with children in a way that made complex math concepts understandable, using clear explanations, visual aids, and engaging methods to cater to their individual learning styles. \n• Covered various math topics including simple and more complex themes arithmetic, algebra, geometry, and calculus, ensuring thorough understanding and proficiency.\n• Assisted with homework assignments, exam preparation, and supplementary learning materials.\n• Monitored progress and adjusted teaching methods as needed to optimize learning outcomes.\n• Received positive feedback from students and their parents for improvements in grades and overall understanding of mathematical concepts."
   }
 }
