@@ -433,13 +433,13 @@ h1::before {
     left: 0;
     bottom: 0;
     display: flex;
-    align-items: flex-end; /* Align text to bottom */
-    justify-content: flex-start;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Title and Text at top */
     flex-direction: column;
     padding: 30px;
     opacity: 0; /* Start hidden */
     transition: all 0.5s ease;
-    text-align: left;
+    text-align: center; /* Center text */
 }
 
 .work:hover img {
@@ -486,7 +486,7 @@ h1::before {
     color: var(--bg-color);
     font-size: 20px;
     transition: var(--transition);
-    align-self: flex-start;
+    margin-top: auto; /* Push to bottom of card */
     transform: translateY(20px);
     transition: 0.4s 0.2s; /* Delay */
 }
