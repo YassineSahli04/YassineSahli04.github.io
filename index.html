@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio Website</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -48,7 +49,7 @@
   </div>
 
   <body>
-    <nav id="navbar">
+    <nav id="navbar" data-aos="fade-down">
       <div class="container">
         <img src="image/logo.png" class="logo" />
         <ul id="side-menu">
@@ -63,27 +64,30 @@
       </div>
     </nav>
 
-    <div id="header">
+    <div id="header" data-aos="fade-in">
       <div class="container">
         <div class="header-text">
-          <p>Software Engineer Student</p>
-          <h1>Hi, I'm <span>Yassine</span><br /></h1>
-          <h2>
+          <p data-aos="fade-down" data-aos-delay="200">Software Engineer Student</p>
+          <h1 data-aos="fade-up" data-aos-delay="400">Hi, I'm <span>Yassine</span><br /></h1>
+          <h2 data-aos="fade-up" data-aos-delay="600">
             Let's explore how <span>code</span>, <span>creativity</span>, and
             <span>curiosity</span> shape my journey.
           </h2>
         </div>
+        <a href="#about" class="scroll-down">
+          <i class="bx bx-chevron-down"></i>
+        </a>
       </div>
     </div>
 
-    <div id="about">
+    <div id="about" data-aos="fade-up">
       <div class="container">
         <div class="row">
-          <div class="column1">
+          <div class="column1" data-aos="fade-right" data-aos-duration="1000">
             <img src="image/aboutme.jpg" />
           </div>
-          <div class="column2">
-            <h1>About Me</h1>
+          <div class="column2" data-aos="fade-left" data-aos-duration="1000">
+            <h1 class="sub-title">About Me</h1>
             <p>
               I’m a Software Engineering (CO-OP) student at the University of
               Ottawa (Dean’s List, GPA 9.65), passionate about building
@@ -97,25 +101,26 @@
               <a
                 class="icon-link"
                 href="https://www.linkedin.com/in/yassine-sahli/"
+                data-aos="zoom-in" data-aos-delay="200"
               >
                 <i class="bx bxl-linkedin-square"></i>
               </a>
-              <a class="icon-link" href="https://github.com/YassineSahli04">
+              <a class="icon-link" href="https://github.com/YassineSahli04" data-aos="zoom-in" data-aos-delay="400">
                 <i class="bx bxl-github"></i>
               </a>
-              <a class="btn-link" href="#Contact">Contact Me</a>
+              <a class="btn-link" href="#Contact" data-aos="zoom-in" data-aos-delay="600">Contact Me</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="Experiences">
+    <div id="Experiences" data-aos="fade-up">
       <div class="container">
         <h1>Experiences</h1>
 
         <div class="experiences-list">
-          <div class="experience-card" data-id="exp1">
+          <div class="experience-card" data-id="exp1" data-aos="fade-up" data-aos-delay="0">
             <i class="fa-solid fa-graduation-cap fa-beat-fade"></i>
             <h2>Software Developer in Test - CO-OP</h2>
             <p>
@@ -126,7 +131,7 @@
               a token-reuse login solution to improve Selenium performance.
             </p>
           </div>
-          <div class="experience-card" data-id="exp2">
+          <div class="experience-card" data-id="exp2" data-aos="fade-up" data-aos-delay="200">
             <i class="fa-solid fa-code fa-beat-fade" style="color: #ffffff"></i>
             <h2>Software Devoloper - CO-OP</h2>
             <p>
@@ -135,7 +140,7 @@
               professional industrial environment.
             </p>
           </div>
-          <div class="experience-card" data-id="exp3">
+          <div class="experience-card" data-id="exp3" data-aos="fade-up" data-aos-delay="400">
             <i class="fa-solid fa-code fa-beat-fade" style="color: #ffffff"></i>
             <h2>Software Devoloper - Intern</h2>
             <p>
@@ -148,7 +153,7 @@
       </div>
     </div>
 
-    <div id="Projects">
+    <div id="Projects" data-aos="fade-up">
       <div class="container">
         <h1>Projects</h1>
         <div class="projects-list" id="projects-list">
@@ -346,22 +351,22 @@
             </div>
           </div>
         </div>
-        <a href="javascript:void(0)" class="btn" id="see-more-btn">See More</a>
+        <a href="javascript:void(0)" class="btn" id="see-more-btn" data-aos="fade-up">See More</a>
       </div>
     </div>
 
-    <div id="Contact">
+    <div id="Contact" data-aos="fade-up">
       <div class="container">
         <div class="row">
-          <div class="contact-column1">
-            <h1>Contact Me</h1>
+          <div class="contact-column1" data-aos="fade-right">
+            <h1 class="sub-title">Contact Me</h1>
             <p>
               <i class="fa-regular fa-paper-plane fa-beat-fade"></i>
               yassinesahliinter@gmail.com
             </p>
             <p><i class="fa-solid fa-phone fa-beat-fade"></i> (873) 455 7117</p>
           </div>
-          <div class="contact-column2">
+          <div class="contact-column2" data-aos="fade-left">
             <form action="https://formspree.io/f/movdrlzy" method="POST">
               <input type="text" name="name" placeholder="Name" required />
               <input type="email" name="email" placeholder="Email" required />
@@ -378,6 +383,15 @@
       </div>
     </div>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-out-cubic",
+        once: false,
+        mirror: true,
+      });
+    </script>
     <script>
       var sideMenu = document.getElementById("side-menu");
 
@@ -386,41 +400,7 @@
       }
 
       function closemenu() {
-        sideMenu.style.right = "-150px";
-      }
-    </script>
-
-    <script>
-      fetch("data/experiences.json")
-        .then((res) => res.json())
-        .then((data) => {
-          document.querySelectorAll(".experience-card").forEach((card) => {
-            card.addEventListener("click", () => {
-              const id = card.dataset.id;
-              const exp = data[id];
-
-              document.getElementById("card-title").innerText = exp.title;
-              document.getElementById("card-date").innerText = exp.date;
-              document.getElementById("card-company").innerText = exp.company;
-              document.getElementById("card-description").innerHTML =
-                exp.description.replace(/\n/g, "<br>");
-              document.getElementById("info-card-experiences").style.display =
-                "flex";
-            });
-          });
-        });
-
-      document
-        .getElementById("info-card-experiences")
-        .addEventListener("click", function (event) {
-          const content = this.querySelector(".card-content");
-          if (!content.contains(event.target)) {
-            closeCard();
-          }
-        });
-
-      function closeCard() {
-        document.getElementById("info-card-experiences").style.display = "none";
+        sideMenu.style.right = "-200px";
       }
     </script>
 
@@ -513,6 +493,30 @@
           form.reset();
         }
       };
+    </script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+
+    <script>
+      const backToTopButton = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+      });
+
+      backToTopButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
     </script>
   </body>
 </html>
