@@ -58,16 +58,29 @@
           <li><a href="#Experiences">Experience</a></li>
           <li><a href="#Projects">Projects</a></li>
           <li><a href="#Contact">Contact</a></li>
-          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          <button class="menu-close" id="menuClose" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <button
+          class="menu-toggle"
+          id="menuOpen"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="side-menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
+    <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
 
     <div id="header" data-aos="fade-in">
       <div class="container">
         <div class="header-text">
-          <p data-aos="fade-down" data-aos-delay="200">Software Engineer Student</p>
+          <p class="hero-kicker" data-aos="fade-down" data-aos-delay="200">
+            Software Engineer Student
+          </p>
           <h1 data-aos="fade-up" data-aos-delay="400">Hi, I'm <span>Yassine</span><br /></h1>
           <h2 data-aos="fade-up" data-aos-delay="600">
             Let's explore how <span>code</span>, <span>creativity</span>, and
@@ -389,15 +402,36 @@
       });
     </script>
     <script>
-      var sideMenu = document.getElementById("side-menu");
+      const sideMenu = document.getElementById("side-menu");
+      const menuOpenBtn = document.getElementById("menuOpen");
+      const menuCloseBtn = document.getElementById("menuClose");
+      const menuBackdrop = document.getElementById("menuBackdrop");
 
-      function openmenu() {
-        sideMenu.style.right = 0;
+      function setMenuOpen(isOpen) {
+        document.body.classList.toggle("menu-open", isOpen);
+        sideMenu.setAttribute("data-open", isOpen ? "true" : "false");
+        menuOpenBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
       }
 
-      function closemenu() {
-        sideMenu.style.right = "-200px";
-      }
+      menuOpenBtn.addEventListener("click", () => setMenuOpen(true));
+      menuCloseBtn.addEventListener("click", () => setMenuOpen(false));
+      menuBackdrop.addEventListener("click", () => setMenuOpen(false));
+
+      sideMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => setMenuOpen(false));
+      });
+
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setMenuOpen(false);
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          setMenuOpen(false);
+        }
+      });
     </script>
 
     <script>
